@@ -8,6 +8,8 @@
     "minified": false,
     "autoAudits": false
   },
+  "miniprogramRoot": "client",
+  "cloudfunctionRoot": "functions",
   "appid": "touristappid",
   "projectname": "mpx-cloud-demo",
   "description": "A mpx project",
