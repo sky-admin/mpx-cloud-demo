@@ -14,7 +14,7 @@ exports.main = async (event, context) => {
 
   let openId = userInfo.openId // 添加博客者的openId
 
-  cloud.init()
+  cloud.init({ env: 'blog-demo-46b1v' })
   // 数据库引用
   const db = cloud.database()
   // 集合引用
