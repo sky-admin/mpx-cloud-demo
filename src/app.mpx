@@ -5,6 +5,7 @@
   mpx.use(apiProxy, { usePromise: true })
   App({
     onLaunch: function () {
+      // todo: env替换
       wx.cloud.init({
         env: 'blog-demo-46b1v',
         traceUser: true

@@ -55,12 +55,8 @@
      * 跳转至文章详情
      */
     getDetail (e) {
-      let _id = e.currentTarget.dataset.blogid
-      app.globalData.blog.id = _id
-
-      wx.navigateTo({
-        url: './detail'
-      })
+      app.globalData.blog.detailId = e.currentTarget.dataset.blogid
+      wx.navigateTo({ url: './detail' })
     }
 
   })

@@ -32,8 +32,8 @@
      * 获取文章详情
      */
     getBlogDetail () {
-      // 初始化db
-      const db = wx.cloud.database({})
+      // 初始化db todo: env填写
+      const db = wx.cloud.database({ env: 'blog-demo-46b1v' })
       let blogId = app.globalData.blog.detailId
       db.collection('blog').doc(blogId).get().then(res => {
         console.log('db读取成功', res.data)
